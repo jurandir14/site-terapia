@@ -107,11 +107,13 @@
     <!-- Navegação -->
     <nav class="fixed w-full top-0 z-40 bg-white/90 backdrop-blur-md border-b border-border">
         <div class="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
-            <div class="font-playfair font-bold text-xl text-primary tracking-wide">
+            
+            <!-- Logo com ajuste mobile (whitespace-nowrap e text-lg) -->
+            <div class="font-playfair font-bold text-lg md:text-xl text-primary tracking-wide whitespace-nowrap">
                 ROSEANNE OLIVEIRA
             </div>
             
-            <div class="flex items-center gap-6">
+            <div class="flex items-center gap-4 md:gap-6">
                 <!-- Menu desktop -->
                 <div class="hidden md:flex gap-8 font-medium text-foreground/80 text-sm uppercase tracking-wider mr-4">
                     <a href="#sobre" class="hover:text-primary transition-colors">Sobre Mim</a>
@@ -123,8 +125,8 @@
                     <i data-lucide="instagram" class="w-5 h-5"></i>
                 </a>
 
-                <!-- Botão de agendamento -->
-                <a href="#contato" class="bg-primary text-white px-5 py-2.5 rounded-full font-medium text-sm hover:bg-[#72826e] transition-all shadow-md">
+                <!-- Botão de agendamento com ajuste mobile (whitespace-nowrap, text-xs e px-4 py-2) -->
+                <a href="#contato" class="bg-primary text-white px-4 py-2 md:px-5 md:py-2.5 rounded-full font-medium text-xs md:text-sm hover:bg-[#72826e] transition-all shadow-md whitespace-nowrap">
                     Agendar Sessão
                 </a>
             </div>
@@ -137,11 +139,13 @@
             <div class="container mx-auto px-4 md:px-6 relative z-10 text-center">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6 md:mb-8">
                     <i data-lucide="sparkles" class="w-4 h-4"></i>
-                    <span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Caxias do Sul • RS & Atendimento Online</span>
+                    <span class="text-[10px] sm:text-xs md:text-sm font-semibold tracking-wide uppercase">Caxias do Sul • RS & Atendimento Online</span>
                 </div>
                 
+                <!-- H1 com quebra forçada no mobile para harmonizar o texto -->
                 <h1 class="font-playfair text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 max-w-4xl mx-auto leading-tight">
-                    Sinta a leveza de ser <span class="text-primary italic">quem você realmente é</span>
+                    Sinta a leveza de ser <br class="block sm:hidden" />
+                    <span class="text-primary italic inline-block mt-2 sm:mt-0">quem você realmente é</span>
                 </h1>
                 
                 <p class="text-base md:text-xl text-foreground/75 max-w-2xl mx-auto mb-10 leading-relaxed px-2">
