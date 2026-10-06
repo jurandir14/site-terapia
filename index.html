@@ -2,7 +2,7 @@
 <html lang="pt-BR" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Roseanne Oliveira | Terapeuta Vibracional em Caxias do Sul e Online</title>
 <meta name="description" content="Sessões de ThetaHealing, Barras de Access e Reiki. Atendimento presencial em Caxias do Sul (RS) e online para todo o Brasil e mundo.">
 <meta name="keywords" content="Terapeuta Vibracional, ThetaHealing, Barras de Access, Reiki, Caxias do Sul, RS, Terapia Online">
@@ -25,22 +25,6 @@
 tailwind.config={theme:{extend:{colors:{ivory:'#F6F3EC',paper:'#FBF9F4',ink:'#1F251D',forest:'#2B3529',sage:'#7D8C77',clay:'#B98B5E',line:'#E3DED0'},fontFamily:{sans:['"Hanken Grotesk"','sans-serif']}}}}
 </script>
 <style>
-/* ================== FIX MOBILE (definitivo) ================== */
-html, body {
-  overflow-x: hidden !important;
-  max-width: 100% !important;
-  width: 100%;
-  position: relative;
-}
-main, header, footer, section {
-  overflow-x: clip;
-  max-width: 100vw;
-}
-img, video, svg, iframe, canvas, picture {
-  max-width: 100%;
-}
-/* ============================================================= */
-
 .reveal{opacity:0;transform:translateY(48px);filter:blur(6px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1),filter 1s ease}
 .reveal.r-l{transform:translateX(-56px)}.reveal.r-r{transform:translateX(56px)}.reveal.r-s{transform:scale(.94) translateY(30px)}
 .reveal.in{opacity:1;transform:none;filter:none}
@@ -72,6 +56,9 @@ html::-webkit-scrollbar{width:10px}
 html::-webkit-scrollbar-track{background:#F6F3EC}
 html::-webkit-scrollbar-thumb{background:#C9D0C3;border-radius:5px;border:2px solid #F6F3EC}
 html::-webkit-scrollbar-thumb:hover{background:#7D8C77}
+.grid>*{min-width:0}
+html{overflow-x:hidden;overflow-x:clip}
+img{max-width:100%}
 </style>
 </head>
 <body class="bg-ivory text-ink font-sans antialiased selection:bg-forest selection:text-ivory overflow-x-hidden">
@@ -100,7 +87,7 @@ html::-webkit-scrollbar-thumb:hover{background:#7D8C77}
 
 <main id="topo">
   <section class="relative bg-[#EEF0E6] pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-    <div class="mx-auto max-w-6xl px-5 lg:px-8 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+    <div class="mx-auto max-w-6xl px-5 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
       <div>
         <p class="reveal group inline-flex items-center gap-2 bg-white/70 border border-line rounded-lg px-3 py-1.5 text-xs font-medium tracking-wide text-forest mb-7"><i class="ph-duotone ph-map-pin text-base text-clay ph-anim"></i>Caxias do Sul, RS e atendimento online</p>
         <h1 class="reveal text-[2.5rem] sm:text-5xl lg:text-6xl font-medium tracking-tight leading-[1.08] text-forest">Sinta a leveza de ser <span class="text-sage">quem você realmente é</span></h1>
@@ -118,7 +105,7 @@ html::-webkit-scrollbar-thumb:hover{background:#7D8C77}
   </section>
 
   <section id="sobre" class="py-20 md:py-28">
-    <div class="mx-auto max-w-6xl px-5 lg:px-8 grid lg:grid-cols-12 gap-10 lg:gap-20">
+    <div class="mx-auto max-w-6xl px-5 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20">
       <div class="lg:col-span-5">
         <p class="reveal text-sm font-medium text-sage mb-3">Sobre</p>
         <h2 class="reveal text-4xl md:text-5xl font-medium tracking-tight leading-tight text-forest">Prazer, eu sou a Roseanne</h2>
@@ -138,7 +125,7 @@ html::-webkit-scrollbar-thumb:hover{background:#7D8C77}
         <h2 class="reveal text-4xl md:text-5xl font-medium tracking-tight leading-tight text-forest mb-4">O que posso fazer por você</h2>
         <p class="reveal text-lg text-ink/65">Escolha uma técnica para conhecer como ela pode apoiar o seu processo.</p>
       </div>
-      <div id="tabs" class="reveal grid lg:grid-cols-12 gap-6 lg:gap-10">
+      <div id="tabs" class="reveal grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10">
         <div role="tablist" class="lg:col-span-5 flex flex-col gap-2">
 <button role="tab" data-i="0" aria-selected="true" class="tab group relative w-full text-left flex items-center gap-4 p-5 rounded-2xl border border-transparent hover:bg-white/70 transition-all duration-300 aria-selected:bg-white aria-selected:border-line aria-selected:shadow-[0_18px_40px_-22px_rgba(43,53,41,.35)] overflow-hidden">
 <span class="ib w-12 h-12 shrink-0 rounded-xl bg-[#EEF0E6] text-forest flex items-center justify-center text-2xl transition-colors duration-300 group-aria-selected:bg-forest group-aria-selected:text-ivory"><i class="ph-duotone ph-brain ph-anim"></i></span>
@@ -169,25 +156,25 @@ html::-webkit-scrollbar-thumb:hover{background:#7D8C77}
 <h3 class="st text-3xl md:text-4xl font-medium tracking-tight text-forest mb-4" style="animation-delay:.1s">ThetaHealing</h3>
 <p class="st text-lg text-ink/65 leading-relaxed mb-8 max-w-xl" style="animation-delay:.16s">Pelas ondas cerebrais Theta, acessamos o subconsciente para reprogramar crenças que limitam a vida amorosa, financeira ou a saúde.</p>
 <p class="st text-xs uppercase tracking-widest font-medium text-sage mb-4" style="animation-delay:.22s">Técnicas que aplico</p>
-<div class="grid sm:grid-cols-2 gap-3"><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.28s"><i class="ph-duotone ph-dna text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">DNA Básico e Avançado</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.35000000000000003s"><i class="ph-duotone ph-magnifying-glass text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Digging profundo</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.42000000000000004s"><i class="ph-duotone ph-infinity text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Você e o Criador, Seu Parceiro</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.49000000000000005s"><i class="ph-duotone ph-heart text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Alma Gêmea e Jogo da Vida</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.56s"><i class="ph-duotone ph-person-simple text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Corpo e Peso Perfeito</span></div></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.28s"><i class="ph-duotone ph-dna text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">DNA Básico e Avançado</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.35000000000000003s"><i class="ph-duotone ph-magnifying-glass text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Digging profundo</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.42000000000000004s"><i class="ph-duotone ph-infinity text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Você e o Criador, Seu Parceiro</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.49000000000000005s"><i class="ph-duotone ph-heart text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Alma Gêmea e Jogo da Vida</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.56s"><i class="ph-duotone ph-person-simple text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Corpo e Peso Perfeito</span></div></div></div>
 <div class="panel hidden" role="tabpanel">
 <div class="flex items-start justify-between gap-6 mb-6"><span class="st w-20 h-20 rounded-2xl bg-[#EEF0E6] text-forest flex items-center justify-center text-5xl floaty"><i class="ph-duotone ph-hand-palm"></i></span><span class="st text-7xl font-light text-line leading-none" style="animation-delay:.05s">02</span></div>
 <h3 class="st text-3xl md:text-4xl font-medium tracking-tight text-forest mb-4" style="animation-delay:.1s">Barras de Access</h3>
 <p class="st text-lg text-ink/65 leading-relaxed mb-8 max-w-xl" style="animation-delay:.16s">Toques suaves em pontos da cabeça liberam pensamentos, ideias e emoções acumuladas que travam as suas escolhas, trazendo clareza mental.</p>
 <p class="st text-xs uppercase tracking-widest font-medium text-sage mb-4" style="animation-delay:.22s">Técnicas que aplico</p>
-<div class="grid sm:grid-cols-2 gap-3"><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.28s"><i class="ph-duotone ph-lightbulb text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Access Consciousness</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.35000000000000003s"><i class="ph-duotone ph-hand-palm text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Facilitação de Barras</span></div></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.28s"><i class="ph-duotone ph-lightbulb text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Access Consciousness</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.35000000000000003s"><i class="ph-duotone ph-hand-palm text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Facilitação de Barras</span></div></div></div>
 <div class="panel hidden" role="tabpanel">
 <div class="flex items-start justify-between gap-6 mb-6"><span class="st w-20 h-20 rounded-2xl bg-[#EEF0E6] text-forest flex items-center justify-center text-5xl floaty"><i class="ph-duotone ph-hand-heart"></i></span><span class="st text-7xl font-light text-line leading-none" style="animation-delay:.05s">03</span></div>
 <h3 class="st text-3xl md:text-4xl font-medium tracking-tight text-forest mb-4" style="animation-delay:.1s">Reiki</h3>
 <p class="st text-lg text-ink/65 leading-relaxed mb-8 max-w-xl" style="animation-delay:.16s">Como Mestre Reiki, canalizo a energia vital universal para alinhar os chakras, reduzir o estresse profundo e promover um estado de calma.</p>
 <p class="st text-xs uppercase tracking-widest font-medium text-sage mb-4" style="animation-delay:.22s">Graus e aplicações</p>
-<div class="grid sm:grid-cols-2 gap-3"><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.28s"><i class="ph-duotone ph-flower-lotus text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Reiki Nível I e II</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.35000000000000003s"><i class="ph-duotone ph-crown-simple text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Mestrado em Reiki</span></div></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.28s"><i class="ph-duotone ph-flower-lotus text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Reiki Nível I e II</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.35000000000000003s"><i class="ph-duotone ph-crown-simple text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Mestrado em Reiki</span></div></div></div>
 <div class="panel hidden" role="tabpanel">
 <div class="flex items-start justify-between gap-6 mb-6"><span class="st w-20 h-20 rounded-2xl bg-[#EEF0E6] text-forest flex items-center justify-center text-5xl floaty"><i class="ph-duotone ph-atom"></i></span><span class="st text-7xl font-light text-line leading-none" style="animation-delay:.05s">04</span></div>
 <h3 class="st text-3xl md:text-4xl font-medium tracking-tight text-forest mb-4" style="animation-delay:.1s">Reprogramação energética</h3>
 <p class="st text-lg text-ink/65 leading-relaxed mb-8 max-w-xl" style="animation-delay:.16s">Identificamos o que trava o seu fluxo natural e liberamos medos, pesos e padrões repetitivos, para que a sua transformação aconteça de forma gentil e profunda.</p>
 <p class="st text-xs uppercase tracking-widest font-medium text-sage mb-4" style="animation-delay:.22s">Como funciona</p>
-<div class="grid sm:grid-cols-2 gap-3"><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.28s"><i class="ph-duotone ph-magnifying-glass text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Identificação de padrões repetitivos</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.35000000000000003s"><i class="ph-duotone ph-feather text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Liberação de medos e pesos</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.42000000000000004s"><i class="ph-duotone ph-arrows-clockwise text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Reprogramação da energia</span></div></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.28s"><i class="ph-duotone ph-magnifying-glass text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Identificação de padrões repetitivos</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.35000000000000003s"><i class="ph-duotone ph-feather text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Liberação de medos e pesos</span></div><div class="st group flex items-center gap-3 p-4 rounded-xl bg-paper border border-line hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-18px_rgba(43,53,41,.4)] transition-all duration-300" style="animation-delay:0.42000000000000004s"><i class="ph-duotone ph-arrows-clockwise text-2xl text-clay ph-anim"></i><span class="text-[15px] text-ink/85">Reprogramação da energia</span></div></div></div>
           </div>
         </div>
       </div>
@@ -200,7 +187,7 @@ html::-webkit-scrollbar-thumb:hover{background:#7D8C77}
         <div class="ring absolute -right-40 -top-40 w-[34rem] h-[34rem] rounded-full border border-dashed border-clay/40" style="animation:spin 70s linear infinite"></div>
         <div class="ring absolute -right-24 -top-24 w-[26rem] h-[26rem] rounded-full border border-clay/25" style="animation:spin 50s linear infinite reverse"></div>
         <div class="absolute -left-24 -bottom-24 w-72 h-72 rounded-full bg-clay/10 blur-3xl"></div>
-        <div class="relative grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
             <p class="group inline-flex items-center gap-2 border border-clay/40 bg-white/70 rounded-lg px-3 py-1.5 text-xs font-medium tracking-widest uppercase text-[#8A6A43] mb-7"><i class="ph-duotone ph-crown-simple text-base ph-anim"></i>Protocolo exclusivo</p>
             <h2 class="text-4xl md:text-6xl font-medium tracking-tight leading-[1.05] text-forest mb-6">Combo<br><span class="gold">Harmonia Holística</span></h2>
@@ -249,7 +236,8 @@ html::-webkit-scrollbar-thumb:hover{background:#7D8C77}
     </div>
   </div>
   <div class="border-t border-line"><div class="mx-auto max-w-6xl px-5 lg:px-8 py-7 flex flex-col md:flex-row justify-between gap-2 text-xs text-ink/50">
-    <p>Presencial em Caxias do Sul, RS. Online para todo o Brasil e mundo.</p><p class="flex flex-wrap items-center gap-x-5 gap-y-2"><span>&copy; 2026 Roseanne Oliveira, Terapias Vibracionais.</span><button type="button" data-lgpd-open class="group inline-flex items-center gap-1.5 text-forest hover:text-[#8A6A43] transition-colors"><i class="ph-duotone ph-shield-check text-base ph-anim"></i>Privacidade e cookies</button></p></div></div>
+    <p>Presencial em Caxias do Sul, RS. Online para todo o Brasil e mundo.</p><p class="flex flex-wrap items-center gap-x-5 gap-y-2"><span>&copy; 2026 Roseanne Oliveira, Terapias Vibracionais.</span><button type="button" data-lgpd-open class="group inline-flex items-center gap-1.5 text-forest hover:text-[#8A6A43] transition-colors"><i class="ph-duotone ph-shield-check text-base ph-anim"></i>Privacidade e cookies</button></p></div>
+  <div class="mx-auto max-w-6xl px-5 lg:px-8 pb-7 -mt-2 text-xs text-ink/50 text-center md:text-left"><p>Site desenvolvido por <span class="font-medium text-forest">JB Studio</span></p></div></div>
 </footer>
 
 
