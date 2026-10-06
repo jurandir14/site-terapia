@@ -298,7 +298,7 @@ img{max-width:100%}
     io.observe(el);if(el.getBoundingClientRect().top<innerHeight)el.classList.add('in')});
   var prog=document.getElementById('prog'),px=document.querySelector('#topo section:first-child img'),tick=false;
   function onS(){if(tick)return;tick=true;requestAnimationFrame(function(){var m=document.documentElement.scrollHeight-innerHeight;prog.style.transform='scaleX('+(m>0?scrollY/m:0)+')';
-    if(px&&scrollY<innerHeight)px.style.transform='translateY('+(scrollY*.08)+'px) scale(1.04)';tick=false})}
+    tick=false})}
   addEventListener('scroll',onS,{passive:true});onS();
   setTimeout(function(){rv.forEach(function(el){el.classList.add('in')})},2500);
 })();
